@@ -36,6 +36,25 @@ router.post("/", upload.single("image"), async (req, res) => {
 });
 
 
+//show single stories
+router.get('/:id', async (req, res) => {
+  try {
+    let video = await Video.findById(req.params.id)
+      .populate('user')
+      .lean()
+    if (!video) {
+      return res.render('error/500')
+    }
+    res.render('show2', {
+      video,//this is me passing the data to the view
+    })
+  } catch (err) {
+    console.log(err)
+    res.render('error/404')
+  }
+});
+
+
 
 
 
