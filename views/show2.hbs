@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Askbootstrap">
+  <meta name="author" content="Askbootstrap">
+  <title>ShadowNet - Video Streaming Service</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link href="/css/style2.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
+    integrity="sha512-X/RSQYxFb/tvuz6aNRTfKXDnQzmnzoawgEQ4X8nZNftzs8KFFH23p/BA6D2k0QCM4R0sY1DEy9MIY9b3fwi+bg=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"
+    integrity="sha512-f28cvdA4Bq3dC9X9wNmSx21rjWI+5piIW/uoc2LuQ67asKxfQjUow2MkcCNcfJiaLrHcGbed1wzYe3dlY4w9gA=="
+    crossorigin="anonymous" />
+
+
+</head>
+
+<body id="page-top">
+  <nav class="navbar navbar-expand navbar-light bg-white static-top osahan-nav sticky-top">
+    &nbsp;&nbsp;
+    <button class="btn btn-link btn-sm text-secondary order-1 order-sm-0" id="sidebarToggle">
+      <i class="fas fa-bars"></i>
+    </button> &nbsp;&nbsp;
+    <a class="navbar-brand mr-1" href="index.html"><img class="img-fluid" alt="" src="img/logo.png"></a>
+
+    <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-5 my-2 my-md-0 osahan-navbar-search">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search for...">
+        <div class="input-group-append">
+          <button class="btn btn-light" type="button">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <ul class="navbar-nav ml-auto ml-md-0 osahan-right-navbar">
+      <li class="nav-item mx-1">
+        <a class="nav-link" href="upload.html">
+          <i class="fas fa-plus-circle fa-fw"></i>
+          Upload Video
+        </a>
+      </li>
+      <li class="nav-item dropdown no-arrow mx-1">
+        <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-bell fa-fw"></i>
+          <span class="badge badge-danger">9+</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
+          <a class="dropdown-item" href="#"><i class="fas fa-fw fa-edit "></i> &nbsp; Action</a>
+          <a class="dropdown-item" href="#"><i class="fas fa-fw fa-headphones-alt "></i> &nbsp; Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#"><i class="fas fa-fw fa-star "></i> &nbsp; Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown no-arrow mx-1">
+        <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-envelope fa-fw"></i>
+          <span class="badge badge-success">7</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="messagesDropdown">
+          <a class="dropdown-item" href="#"><i class="fas fa-fw fa-edit "></i> &nbsp; Action</a>
+          <a class="dropdown-item" href="#"><i class="fas fa-fw fa-headphones-alt "></i> &nbsp; Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#"><i class="fas fa-fw fa-star "></i> &nbsp; Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown no-arrow osahan-right-navbar-user">
+        <a class="nav-link dropdown-toggle user-dropdown-link" href="#" id="userDropdown" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img alt="Avatar" src="img/user.png">
+          Osahan
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+          <a class="dropdown-item" href="account.html"><i class="fas fa-fw fa-user-circle"></i> &nbsp; My Account</a>
+          <a class="dropdown-item" href="subscriptions.html"><i class="fas fa-fw fa-video"></i> &nbsp; Subscriptions</a>
+          <a class="dropdown-item" href="settings.html"><i class="fas fa-fw fa-cog"></i> &nbsp; Settings</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"><i
+              class="fas fa-fw fa-sign-out-alt"></i> &nbsp; Logout</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <div id="wrapper">
+
+
+    <ul class="sidebar navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-home"></i>
+          <span>Home</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-users"></i>
+          <span>Channels</span>
+        </a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Pages</span>
+        </a>
+        <div class="dropdown-menu">
+          <h6 class="dropdown-header">Login Screens:</h6>
+          <a class="dropdown-item" href="login.html">Login</a>
+          <a class="dropdown-item" href="register.html">Register</a>
+          <a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
+          <div class="dropdown-divider"></div>
+          <h6 class="dropdown-header">Other Pages:</h6>
+          <a class="dropdown-item" href="404.html">404 Page</a>
+          <a class="dropdown-item" href="blank.html">Blank Page</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-history"></i>
+          <span>History Page</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          <i class="fas fa-fw fa-list-alt"></i>
+          <span>Categories</span>
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="categories.html">Movie</a>
+          <a class="dropdown-item" href="categories.html">Music</a>
+          <a class="dropdown-item" href="categories.html">Television</a>
+        </div>
+      </li>
+      <li class="nav-item channel-sidebar-list">
+        <h6>SUBSCRIPTIONS</h6>
+
+      </li>
+    </ul>
+    <div id="content-wrapper">
+      <div class="container-fluid pb-0">
+        <div class="video-block section-padding">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="single-video-left">
+                <div class="single-video">
+                  <iframe width="700" height="400" src="/{{video.video}}" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="single-video-title box mb-3">
+                  <h2>{{video.title}}</h2>
+
+                </div>
+                <div class="single-video-info-content box mb-3">
+                  <h6>About :</h6>
+                  <p>{{video.description}} </p>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="single-video-right">
+                <div class="row">
+
+                  <h6>Up Next</h6>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="video-card video-card-list">
+                  <div class="video-card-image">
+                    <a class="play-icon" href="/videos/{{_id}}"><i class="fas fa-play-circle"></i></a>
+                    <a href="/videos/{{_id}}"><img class="img-fluid" src="/{{video.thumbnail}}" alt=""></a>
+
+                  </div>
+                  <div class="video-card-body">
+                    <div class="btn-group float-right right-action">
+                      <a href="#" class="right-action-link text-gray" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#"><i class="fas fa-fw fa-star"></i> &nbsp; Top Rated</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-fw fa-signal"></i> &nbsp; Viewed</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-fw fa-times-circle"></i> &nbsp; Close</a>
+                      </div>
+                    </div>
+                    <div class="video-title">
+                      <a href="#">{{video.title}}</a>
+                    </div>
+                    <div class="video-page text-success">
+                      {{video.status}} <a title="" data-placement="top" data-toggle="tooltip" href="#"
+                        data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                    </div>
+                    <div class="video-view">
+                      &nbsp;<i class="fas fa-calendar-alt"></i> {{video.createdAt}}
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <footer class="sticky-footer">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg-6 col-sm-6">
+          <p class="mt-1 mb-0">&copy; Copyright 2020 <strong class="text-dark">Vidoe</strong>. All Rights
+            Reserved<br>
+            <small class="mt-0 mb-0">Made with <i class="fas fa-heart text-danger"></i> by <a class="text-primary"
+                target="_blank" href="https://askbootstrap.com/">Ask Bootstrap</a>
+            </small>
+          </p>
+        </div>
+        <div class="col-lg-6 col-sm-6 text-right">
+          <div class="app">
+            <a href="#"><img alt="" src="img/google.png"></a>
+            <a href="#"><img alt="" src="img/apple.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+
+  </div>
+
+
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+  integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+  crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+  integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+  integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+  crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"
+  integrity="sha512-IUpSKpPKlXuPokiYONEZUG/H4c1rw4VmbGdnBKB18qm/9jbnxQ4Rv5Da9qEmB3hIa3k4DxRNoZfB6FTpERnuOQ=="
+  crossorigin="anonymous"></script>
+
+<script src="/JS/custom.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/rocket-loader@2.4.0/js/loader.min.js"></script>
+
+</html>

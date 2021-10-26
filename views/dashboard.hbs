@@ -1,0 +1,65 @@
+<!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark info-color">
+  <a class="navbar-brand" href="#">My DashBoard</a>
+  <a href="/videos/add"><button type="button" class="btn btn-primary">ADD NEW</button></a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item">
+        <a class="nav-link " aria-haspopup="true" aria-expanded="false" href="/auth/logout">
+          <i class="fas fa-user"></i>Log out</a>
+
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<h4>Welcome! {{name}}</h4>
+
+<!-- check if any data exist-->
+{{#if videos}}
+<table class="striped">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Date</th>
+      <th>Status</th>
+      <th>Status</th>
+      <th>Edit</th>
+      <th>Remove</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each videos}}
+    <tr>
+      <td><a href="/videos/{{_id}}">{{title}}</a></td>
+      <td>{{createdAt}}</td>
+      <td><span>{{status}}</span></td>
+      <!-- Material switch -->
+      <td>
+        <!-- Default checked -->
+        <div class="custom-control custom-switch">
+
+          <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+          <label class="custom-control-label" for="customSwitch1">Public</label>
+        </div>
+      </td>
+      <td>
+        <a href="/videos/edit/{{_id}}">
+          <button class="btn btn-primary"><i class="fas fa-edit"></i> Edit</button>
+        </a>
+      </td>
+
+      <td>
+        <form action="/videos/{{_id}}?_method=DELETE" method='POST' enctype="multipart/form-data">
+          <button class=" btn btn-danger"> <i class="fas fa-trash"></i> Delete</button>
+        </form>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+{{else}}
+<p>no resource created</p>
+{{/if}}
