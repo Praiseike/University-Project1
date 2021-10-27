@@ -48,8 +48,8 @@ app.use(express.static(path.join(__dirname, 'public')))
 //serving images statically
 app.use('/thumbnails', express.static(path.join(__dirname, 'thumbnails')))
 
-// //serving videos statically
-// app.use('/videos', express.static(path.join(__dirname, 'videos')))
+//serving videos statically
+app.use('/videos', express.static(path.join(__dirname, 'videos')))
 
 
 //sessions middleware (must be above passport middleware)
