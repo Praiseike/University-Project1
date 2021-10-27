@@ -55,6 +55,20 @@ router.get('/:id', async (req, res) => {
 });
 
 
+//edit videos
+router.get('/edit/:id', alreadyin, async (req, res) => {
+  try {
+    const video = await Video.findOne({
+      _id: req.params.id,
+    }).lean()
+    res.render('edit', {
+      video,//this is me passing the data to the view
+    })
+  } catch (err) {
+    console.log(err)
+    res.render('error/500')
+  }
+});
 
 
 
