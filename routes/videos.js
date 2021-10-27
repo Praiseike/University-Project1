@@ -72,4 +72,20 @@ router.get('/edit/:id', alreadyin, async (req, res) => {
 
 
 
+
+
+// show add page
+router.delete('/:id', alreadyin, async (req, res) => {
+  try {
+    await Video.deleteOne({ _id: req.params.id })
+    res.redirect('/dashboard')
+  } catch (err) {
+    console.log(err)
+    return res.render(' error/500')
+  }
+
+});
+
+
+
 module.exports = router
