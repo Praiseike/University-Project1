@@ -1,6 +1,6 @@
 :root {
   --input-padding-x: 1.5rem;
-  --input-padding-y: 0.75rem;
+  --input-padding-y: 0.76rem;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
 }
 
 .card-signin .card-body {
-  padding: 2rem;
+  padding: 2.3rem;
 }
 
 .form-signin {
@@ -131,14 +131,14 @@ body {
 }
 
 .btn-google {
-  color: white;
+  color: #fff;
   background-color: #db4437;
   border-radius: none;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
 
 .btn-twitter {
-  color: white;
+  color: #fff;
   background-color: #1da1f2;
   border-radius: none;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
