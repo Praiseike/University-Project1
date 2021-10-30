@@ -67,4 +67,4 @@ router.get('/dashboard', alreadyin, async (req, res) => {
 })
 
 
-module.exports = router
+module.exports = {router}
